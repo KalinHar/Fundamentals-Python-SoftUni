@@ -1,0 +1,1 @@
+Solutions of fundamentals module.
