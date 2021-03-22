@@ -35,3 +35,8 @@ sorted_dict = dict(sorted(my_dict.items(), key=lambda x: x[1]))
 print(sorted_dict)  # {'John': 20, 'Peter': 25, 'Dan': 30}
 revers_dict = dict(reversed(sorted(my_dict.items(), key=lambda x: x[1])))
 print(revers_dict)  # {'Dan': 30, 'Peter': 25, 'John': 20}
+
+# reverse dict and reverse keys-values
+legendary = {"silver": 6, "shards": 8, "hard": 5, "motes": 4}
+result = {va: ke for ke, va in dict(reversed(list(legendary.items()))).items()}
+print(result)
